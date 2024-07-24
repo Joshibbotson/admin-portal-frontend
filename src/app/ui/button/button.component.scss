@@ -1,0 +1,85 @@
+@import "../../../styles.scss";
+
+button {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+button:hover {
+  color: $tertiaryColour;
+  background-color: white;
+}
+button:active {
+  background-color: $offWhite;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button:disabled:hover {
+  color: white;
+  background-color: $tertiaryColour;
+}
+
+.large-btn {
+  width: 10rem;
+}
+
+.med-btn {
+  width: 7.5rem;
+}
+
+.small-btn {
+  width: 4rem;
+}
+
+.success-btn {
+  background-color: $tertiaryColour;
+  color: white;
+}
+.success-btn:hover {
+  color: $tertiaryColour;
+  background-color: white;
+  outline: 1px solid $tertiaryColour;
+}
+
+.warning-btn {
+  background-color: $warningColour;
+  color: white;
+}
+.warning-btn:hover {
+  color: $warningColour;
+  background-color: white;
+  outline: 1px solid $warningColour;
+}
+
+.danger-btn {
+  background-color: $dangerColour;
+  color: white;
+}
+
+.danger-btn:hover {
+  background-color: white;
+  color: $dangerColour;
+  outline: 1px solid $dangerColour;
+}
+
+.info-btn {
+  background-color: $infoColour;
+  color: white;
+}
+
+.info-btn:hover {
+  background-color: white;
+  color: $infoColour;
+  outline: 1px solid $infoColour;
+}
